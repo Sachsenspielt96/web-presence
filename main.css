@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+body {
+    margin: 0;
+    display: inline;
+}
+
+html, body {
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+h1 {
+    font-family: 'JetBrains Mono', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+p {
+    font-family: 'JetBrains Mono', sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+.back1 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("./img/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back1_logo {
+    width: 450px;
+    height: 120px;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.back1 h1 {
+    position: relative;
+    text-align: center;
+    top: 45%;
+    font-size: 40px;
+    transform: translateY(-50%);
+    line-height: 55px;
+}
+
+.back2 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("./img/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texthead_freetime {
+    position: relative;
+    padding-left: 50px;
+    top: 25%;
+}
+
+.text_freetime {
+    position: relative;
+    padding-left: 50px;
+    top: 35%;
+    width: 600px;
+}
+
+.back3 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("./img/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texthead_minecraft {
+    position: relative;
+    padding-right: 50px;
+    text-align: right;
+    top: 25%;
+}
+
+.text_minecraft {
+    position: relative;
+    padding-right: 50px;
+    margin-left: auto;
+    text-align: right;
+    top: 35%;
+    width: 600px;
+}
