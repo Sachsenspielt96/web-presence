@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+* {
+    opacity: 100%;
+}
+
 html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -67,6 +71,21 @@ div {
     transform: translateX(-50%);
 }
 
+.fade_out_left {
+    transform: translateX(-20%);
+    opacity: 0;
+}
+
+.fade_out_right {
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.fade_out_down {
+    margin-top: 50px;
+    opacity: 0;
+}
+
 .back1 {
     width: 100vw;
     height: 100vh;
@@ -92,6 +111,7 @@ div {
     font-size: 40px;
     transform: translateY(-50%);
     line-height: 55px;
+    transition: all 1s ease-in-out;
 }
 
 .back2 {
@@ -105,15 +125,17 @@ div {
 
 .texthead_freetime {
     position: relative;
-    padding-left: 50px;
+    left: 50px;
     top: 25%;
+    transition: all 1s ease-out;
 }
 
 .text_freetime {
     position: relative;
-    padding-left: 50px;
+    left: 50px;
     top: 35%;
     width: 600px;
+    transition: all 1s ease-out;
 }
 
 .back3 {
@@ -130,6 +152,7 @@ div {
     padding-right: 50px;
     text-align: right;
     top: 25%;
+    transition: all 1s ease-out;
 }
 
 .text_minecraft {
@@ -139,4 +162,5 @@ div {
     text-align: right;
     top: 35%;
     width: 600px;
+    transition: all 1s ease-out;
 }
