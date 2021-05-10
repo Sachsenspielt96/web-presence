@@ -5,19 +5,24 @@
     <title>Sachsenspielt</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="./img/logo.png">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="back1">
+    <div class="back1" id="start">
         <img src="./img/logo_trans.png" alt="logo" class="back1_logo">
         <h1>WILLKOMMΞΠ!<br> MEIN NAME IST SΛCHSΞΠSPIΞLT.</h1>
+        <button onclick="scrollToID('freetime')" class="btn btn_down"></button>
     </div>
 
-    <div class="back2">
+    <div class="back2" id="freetime">
+        <button onclick="scrollToID('start')" class="btn btn_up"></button>
         <h1 class="texthead_freetime">Freizeit & Programmieren</h1>
         <p class="text_freetime">Während andere sich gerne auf Fußballplätzen schmutzig machen, verbringe ich meine Zeit gerne drinnen und beschäftige mich mit Computertechnologien. Neben Games und co. widme ich mich sehr gerne dem Entwickeln und Planen von Web- und anderen Anwendungen. Dabei befasse ich mit außerdem umfangreich mit den Sprachen Node.JS & Javascript sowie Java.</p>
+        <button onclick="scrollToID('minecraft')" class="btn btn_down"></button>
     </div>
 
-    <div class="back3">
+    <div class="back3" id="minecraft">
+        <button onclick="scrollToID('freetime')" class="btn btn_up"></button>
         <h1 class="texthead_minecraft">Minecraft</h1>
         <p class="text_minecraft">Eines meiner größten Lieblingsspiele ist Minecraft. Auch wenn es für einige in die Jahre gekommen scheint, ist es für mich immernoch was ganz Besonderes. Schließlich sind einem ja keine Grenzen gesetzt. Natürlich bietet das Spiel auch eine Platform um sein Coding-Talent unter Beweis zu stellen.</p>
     </div>

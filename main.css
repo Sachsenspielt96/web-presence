@@ -3,6 +3,7 @@
 html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -14,9 +15,8 @@ body {
     display: inline;
 }
 
-html, body {
-    height: 100%;
-    /*overflow: hidden;*/
+body {
+    overflow-y: hidden;
 }
 
 h1 {
@@ -30,6 +30,41 @@ p {
     color: white;
     margin: 0;
     font-size: 22px;
+}
+
+div {
+    position: relative;
+}
+
+.btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_up {
+    background-image: url("./img/button_up.png");
+
+    position: absolute;
+    top: 30px;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn_down {
+    background-image: url("./img/button_down.png");
+
+    position: absolute;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .back1 {
