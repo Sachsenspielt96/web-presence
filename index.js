@@ -1,39 +1,33 @@
 function scrollToID(elementID) {
     document.getElementById(elementID).scrollIntoView();
-
-    setTimeout(() => {
-
-        console.log(new Date().getMilliseconds())
-        switch (elementID) {
-            case "freetime":
-                moveToFreetime();
-                break;
-
-            case "minecraft":
-                moveToMinecraft();
-                break;
-        }
-
-    })
-}
-
-function moveToFreetime() {
-    var header = document.getElementById("texthead_freetime");
-    var text = document.getElementById("text_freetime");
-
-    header.classList.remove("fade_out_left");
-    text.classList.remove("fade_out_left");
-}
-
-function moveToMinecraft() {
-    var header = document.getElementById("texthead_minecraft");
-    var text = document.getElementById("text_minecraft");
-
-    header.classList.remove("fade_out_right");
-    text.classList.remove("fade_out_right");
 }
 
 window.onload = function () {
-    var header = document.getElementById("header");
+    const header = document.getElementById("header");
     header.classList.remove("fade_out_down")
 }
+
+$(window).on("load",function() {
+    $(window).scroll(function() {
+        const windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        $(".fade_out_left").each(function() {
+            /* Check the location of each desired element */
+            const objectBottom = $(this).offset().top + $(this).outerHeight();
+
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                $(this)[0].classList.remove("fade_out_left")
+            }
+        });
+
+        $(".fade_out_right").each(function() {
+            /* Check the location of each desired element */
+            const objectBottom = $(this).offset().top + $(this).outerHeight();
+
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                $(this)[0].classList.remove("fade_out_right")
+            }
+        });
+    }).scroll(); //invoke scroll-handler on page-load
+});
