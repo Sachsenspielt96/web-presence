@@ -5,27 +5,62 @@
     <title>Sachsenspielt</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="socialmedia.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/60ffa3ba2d.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 <body>
-    <div class="back1" id="start">
+    <div class="div background back1" id="start">
         <img src="./img/logo_trans.png" alt="logo" class="back1_logo">
         <h1 class="fade_out_down" id="header">WILLKOMMΞΠ!<br> MEIN NAME IST SΛCHSΞΠSPIΞLT.</h1>
         <button onclick="scrollToID('freetime')" class="btn btn_down"></button>
     </div>
 
-    <div class="back2" id="freetime">
+    <div class="div background back2" id="freetime">
         <button onclick="scrollToID('start')" class="btn btn_up"></button>
-        <h1 class="texthead_freetime fade_out_left" id="texthead_freetime">Freizeit & Programmieren</h1>
-        <p class="text_freetime fade_out_left" id="text_freetime">Während andere sich gerne auf Fußballplätzen schmutzig machen, verbringe ich meine Zeit gerne drinnen und beschäftige mich mit Computertechnologien. Neben Games und co. widme ich mich sehr gerne dem Entwickeln und Planen von Web- und anderen Anwendungen. Dabei befasse ich mit außerdem umfangreich mit den Sprachen Node.JS & Javascript sowie Java.</p>
+        <h1 class="texthead_left fade_out_left">Freizeit & Programmieren</h1>
+        <p class="text_left fade_out_left">Während andere sich gerne auf Fußballplätzen schmutzig machen, verbringe ich meine Zeit gerne drinnen und beschäftige mich mit Computertechnologien. Neben Games und co. widme ich mich sehr gerne dem Entwickeln und Planen von Web- und anderen Anwendungen. Dabei befasse ich mit außerdem umfangreich mit den Sprachen Node.JS & Javascript sowie Java.</p>
         <button onclick="scrollToID('minecraft')" class="btn btn_down"></button>
     </div>
 
-    <div class="back3" id="minecraft">
+    <div class="div background back3" id="minecraft">
         <button onclick="scrollToID('freetime')" class="btn btn_up"></button>
-        <h1 class="texthead_minecraft fade_out_right" id="texthead_minecraft">Minecraft</h1>
-        <p class="text_minecraft fade_out_right" id="text_minecraft">Eines meiner größten Lieblingsspiele ist Minecraft. Auch wenn es für einige in die Jahre gekommen scheint, ist es für mich immernoch was ganz Besonderes. Schließlich sind einem ja keine Grenzen gesetzt. Natürlich bietet das Spiel auch eine Platform um sein Coding-Talent unter Beweis zu stellen.</p>
+        <h1 class="texthead_right fade_out_right">Minecraft</h1>
+        <p class="text_right fade_out_right">Eines meiner größten Lieblingsspiele ist Minecraft. Auch wenn es für einige in die Jahre gekommen scheint, ist es für mich immernoch was ganz Besonderes. Schließlich sind einem ja keine Grenzen gesetzt. Natürlich bietet das Spiel auch eine Platform um sein Coding-Talent unter Beweis zu stellen.</p>
+        <button onclick="scrollToID('buyme')" class="btn btn_down"></button>
+    </div>
+
+    <div class="div background back4" id="buyme">
+        <button onclick="scrollToID('minecraft')" class="btn btn_up"></button>
+        <h1 class="texthead_left fade_out_right">Mich kann man mieten! Oder so ähnlich...</h1>
+        <p class="text_left fade_out_right">Aktuell bin ich immer auf der Suche nach neuen Herrausforderungen. Neuen Projekten und Aufgaben die zu tun sind. Wenn du einen nicht gewerblichen Full Stack Developer für dein Projekt brauchst, kann ich dir bestimmt behilflich sein. Meine Spezialisierung liegt in Discord Bots sowie in dem Webdevelopment. Auch Minecraft Plugins/ Mods sind möglich.</p>
+
+        <div class="imprint">
+            <p><a href="imprint/">Impressum</a> » (c) 2021 Sachsenspielt « Made with <3 in Germany</p>
+            <div class="social-media">
+                <div class="smbutton">
+                    <a href="https://github.com/Sachsenspielt96" target="_blank">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                    </a>
+                </div>
+                <div class="smbutton">
+                    <a href="https://www.youtube.com/channel/UCF40ImXVw2ckBL2jQXGTm8A" target="_blank">
+                        <div class="icon"><i class="fab fa-youtube"></i></div>
+                    </a>
+                </div>
+                <div class="smbutton">
+                    <a href="https://www.twitch.tv/sachsenspielt" target="_blank">
+                        <div class="icon"><i class="fab fa-twitch"></i></div>
+                    </a>
+                </div>
+                <div class="smbutton">
+                    <a href="https://twitter.com/sachsenspielt" target="_blank">
+                        <div class="icon" id="twitter"><i class="fab fa-twitter"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

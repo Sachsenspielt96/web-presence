@@ -34,8 +34,9 @@ p {
     font-size: 22px;
 }
 
-div {
+.div {
     position: relative;
+    margin: 0;
 }
 
 .btn {
@@ -70,15 +71,13 @@ div {
 }
 
 .fade_out_left {
-    transform: translateX(-20%);
     opacity: 0;
+    transform: translateX(-50px);
 }
 
 .fade_out_right {
-    transform: translateX(20%);
     opacity: 0;
-    visibility: hidden;
-    max-height: 0;
+    transform: translateX(50px);
 }
 
 .fade_out_down {
@@ -86,13 +85,64 @@ div {
     opacity: 0;
 }
 
-.back1 {
+.background {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-image: url("./img/background1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.back1 {
+    background-image: url("./img/background1.jpg");
+}
+
+.back2 {
+    background-image: url("./img/background2.jpg");
+}
+
+.back3 {
+    background-image: url("./img/background3.jpg");
+}
+
+.back4 {
+    background-image: url("./img/background4.jpg");
+}
+
+.texthead_left {
+    position: relative;
+    left: 50px;
+    top: 25%;
+    transition: all 1s ease-out;
+    width: 50%;
+}
+
+.texthead_right {
+    position: relative;
+    right: 50px;
+    margin-left: auto;
+    text-align: right;
+    top: 25%;
+    transition: all 1s ease-out;
+    width: 50%;
+}
+
+.text_left {
+    position: relative;
+    left: 50px;
+    top: 35%;
+    width: 600px;
+    transition: all 1s ease-out;
+}
+
+.text_right {
+    position: relative;
+    right: 50px;
+    float: right;
+    text-align: right;
+    top: 35%;
+    width: 600px;
+    transition: all 1s ease-out;
 }
 
 .back1_logo {
@@ -114,56 +164,20 @@ div {
     transition: all 1s ease-in-out;
 }
 
-.back2 {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    background-image: url("./img/background2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.imprint {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    background-color: #23272a;
 }
 
-.texthead_freetime {
+.imprint p, a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
     position: relative;
-    left: 50px;
-    top: 25%;
-    transition: all 1s ease-out;
-    width: 50%;
-}
-
-.text_freetime {
-    position: relative;
-    left: 50px;
-    top: 35%;
-    width: 600px;
-    transition: all 1s ease-out;
-}
-
-.back3 {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    background-image: url("./img/background3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.texthead_minecraft {
-    position: relative;
-    padding-right: 50px;
-    text-align: right;
-    top: 25%;
-    transition: all 1s ease-out;
-    visibility: visible;
-}
-
-.text_minecraft {
-    position: relative;
-    padding-right: 50px;
-    margin-left: auto;
-    text-align: right;
-    top: 35%;
-    width: 600px;
-    transition: all 1s ease-out;
-    visibility: visible;
+    text-align: center;
+    top: 30%;
+    transform: translateY(-50%);
 }
