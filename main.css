@@ -164,7 +164,7 @@ p {
     transition: all 1s ease-in-out;
 }
 
-.back4 a {
+.back4 .text_left a {
     font-family: 'JetBrains Mono', sans-serif;
     color: white;
     font-weight: bold;
@@ -184,7 +184,6 @@ p {
     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-weight: normal;
     position: relative;
     text-align: center;
     top: 30%;
