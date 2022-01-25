@@ -496,10 +496,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .flex {
   display: flex;
 }
@@ -640,10 +636,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -727,30 +719,12 @@ section {
     flex-wrap: nowrap;
   }
 
-  .lg\:p-8 {
-    padding: 2rem;
-  }
-
-  .lg\:p-12 {
-    padding: 3rem;
-  }
-
   .lg\:p-36 {
     padding: 9rem;
   }
 
   .lg\:text-center {
     text-align: center;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .lg\:text-6xl {
@@ -761,5 +735,10 @@ section {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
